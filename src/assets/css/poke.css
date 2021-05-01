@@ -1,0 +1,83 @@
+.Home {
+  text-align: center;
+}
+.Home-header {
+  background-color: #524153;
+  height: 86px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.Home-search {
+  width: 65%;
+  height: 55px;
+  border-radius: 10px;
+  border: 0px;
+}
+.Home-main {
+  background-color: #E0D7EC;
+}
+.Home-PokeResult {
+  background-color: #D4C3A3;
+  width: 60%;
+  margin: auto;
+  height: calc(100px * 9.22);
+}
+.Home-PokeList {
+  display: flex;
+  justify-content: space-around;
+}
+.Home-pokemon {
+  background-color: #B4ADBE;
+  border: solid #100B16;
+  border-radius: 10px;
+  width: 30%;
+}
+.Home-pokemon-status {
+  display: flex;
+  justify-content: space-between;
+}
+.Home-pokemon-name {
+  position: relative;
+  bottom: -25px;
+  margin: auto;
+  width: 50%;
+  color: #FFF;
+  background-color: #7E7394;
+  padding: 4%;
+  border: 2px solid #100B16;
+  border-radius: 10px;
+}
+.Home-pokemon-xp {
+  color: #FFF;
+  background-color: #535662;
+  width: 45px;
+  height: 48px;
+  border: solid #100B16;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  position: relative;
+  top: -15px;
+  left: -25px;
+}
+.Home-pokemon-xp p {
+  transform: rotate(-45deg);
+}
+.Home-pokemon-type {
+  position: relative;
+  top: -30px;
+  left: -20px;
+  background-color: #F25D52;
+  border-radius: 10px;
+  padding: 5%;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.Home-pokemon-img img {
+  width: 50%;
+}
+
+/*# sourceMappingURL=poke.css.map */

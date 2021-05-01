@@ -1,0 +1,98 @@
+$purple: #7E7394;
+$darkPurple:#524153;
+$darkPurple2:#535662;
+$ligthPurple:#B4ADBE;
+$text:#FFF;
+
+
+.Home{
+    text-align: center;
+
+    &-header{
+        background-color: $darkPurple;
+        height: 86px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-size: calc(10px + 2vmin);
+        color: white;
+    }
+    &-search{
+        width: 65%;
+        height: 55px;
+        border-radius: 10px;
+        border:0px;
+    }
+
+    &-main{
+        background-color: #E0D7EC;
+    }
+
+    &-PokeResult{
+        background-color: #D4C3A3;
+        width: 60%;
+        margin:auto;
+        height: calc(100px * 9.22);
+    }
+    &-PokeList{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-pokemon{
+        background-color: $ligthPurple;
+        border: solid #100B16;
+        border-radius: 10px;
+        width: 30%;
+    }
+        &-pokemon-status{
+            display: flex;
+            justify-content: space-between;
+        }
+        // &-pokemon-img{
+        //     margin-top: 50%;
+        //     height: 200px;
+        // }
+        &-pokemon-name{
+            position: relative;
+            bottom: -25px;
+            margin:auto;
+            width: 50%;
+            color: $text;
+            background-color: $purple;
+            padding: 4%;
+            border: 2px solid #100B16;
+            border-radius: 10px;
+        }
+        &-pokemon-xp{
+            color:$text;
+            background-color: $darkPurple2;
+            width: 45px;
+            height: 48px;
+            border: solid #100B16;
+            border-radius: 10px;
+            transform:rotate(45deg);
+            position: relative;
+            top:-15px;
+            left:-25px;
+        }
+        &-pokemon-xp p{
+            transform:rotate(-45deg);
+        }
+        &-pokemon-type{
+            position: relative;
+            top:-30px;
+            left:-20px;
+            background-color: #F25D52;
+            border-radius: 10px;
+            padding: 5%;
+            line-height: 18px;
+            color: #FFFFFF;            
+        }
+        &-pokemon-img {
+            & img{
+                width: 50%;
+            }
+        }
+
+}
