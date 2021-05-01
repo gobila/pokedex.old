@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, Fragment} from 'react';
 
 import logo from '../assets/img/logo2.svg';
 import PokeLogo from '../assets/img/International_Pokémon_logo.svg'
@@ -8,20 +8,41 @@ import api from '../services/api';
 
 function Home() {
 
+  const PokemonUrl= 'pokemon/';
   const [pokemon, setPokemon] = useState('');
+  const pokemonId='ditto'
+  const [types, setTypes] = useState('');
+  const TypesUrl='type/'
 
 
   useEffect(()=>{
     getPokemons();
-  },[])
+    getTypes();
+   },[])
 
   async function getPokemons(){
-    await api.get('4').then((response)=>{
+    await api.get(PokemonUrl +pokemonId).then((response)=>{
       setPokemon(response.data)
     }).catch((error)=>{
       setPokemon(null);
       console.log(error)
     })
+  }
+
+  async function getTypes(){
+    await api.get(TypesUrl).then((response)=>{
+      setTypes(response.data.results)
+      // types.forEach(n => {
+      //   console.log(n.name)
+      // });
+    }).catch((error)=>{
+      console.error('busca de tipo com Erro:' +error)
+    })
+  }
+
+  const listed = ()=>{
+    const options = types.map(n=>(<option key={n.name}>{n.name}</option>))
+    return(options)
   }
 
   return (
@@ -38,12 +59,14 @@ function Home() {
         <div className="Home-PokeResult">
           {/* Filtro de tipo */}
           <div className="Home-typeFilter">
-            FIltro
+            <h3>Tipo: </h3>
+            <select>
+              <option>Select</option>
+              {listed()}
+            </select>
           </div>
           {/* lista de pokemons */}
           <div className="Home-PokeList">
-
-
 {/* poke1 */}
             <div className="Home-pokemon">
               <div className="Home-pokemon-status">
