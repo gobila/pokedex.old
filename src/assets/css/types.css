@@ -1,0 +1,283 @@
+.pokemon-type-normal {
+  background-color: #bdbdb1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-fire {
+  background-color: #fa5643;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-water {
+  background-color: #55aeff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-electric {
+  background-color: #fee73f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-grass {
+  background-color: #8bd650;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-ice {
+  background-color: #96f1ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-ground {
+  background-color: #edcb56;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-flying {
+  background-color: #79a4ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-ghost {
+  background-color: #7a75d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-rock {
+  background-color: #cdbc72;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-fighting {
+  background-color: #a85644;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-poison {
+  background-color: #aa5da1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-psychic {
+  background-color: #fa64b7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-bug {
+  background-color: #c2d21f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-dark {
+  background-color: #82624f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-steel {
+  background-color: #c2c0d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-dragon {
+  background-color: #8874ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-fairy {
+  background-color: #f9acff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-unknown {
+  background-color: #68A090;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type-shadow {
+  background-color: #cb9aef;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+
+.Carousel-type-normal {
+  background-color: #bdbdb1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-fire {
+  background-color: #fa5643;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-water {
+  background-color: #55aeff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-electric {
+  background-color: #fee73f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-grass {
+  background-color: #8bd650;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ice {
+  background-color: #96f1ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ground {
+  background-color: #edcb56;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-flying {
+  background-color: #79a4ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ghost {
+  background-color: #7a75d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-rock {
+  background-color: #cdbc72;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-fighting {
+  background-color: #a85644;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-poison {
+  background-color: #aa5da1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-psychic {
+  background-color: #fa64b7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-bug {
+  background-color: #c2d21f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-dark {
+  background-color: #82624f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-steel {
+  background-color: #c2c0d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-dragon {
+  background-color: #8874ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-fairy {
+  background-color: #f9acff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-unknown {
+  background-color: #68A090;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-shadow {
+  background-color: #cb9aef;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=types.css.map */

@@ -2,9 +2,10 @@ import React from  'react';
 import Pokemon from './Pokemon';
 import Pagination from './Pagination';
 import pokeball from '../assets/img/pokeball.png';
+import TypeFilter from './TypeFilter';
 
 const Pokedex = (props)=>{
-    const {pokemons, page, setPage, total, loading} = props;
+    const {pokemons, page, setPage, total, loading, types} = props;
 
     const lastPage = ()=>{
       const nextPage = Math.max(page - 1, 0)
@@ -15,10 +16,12 @@ const Pokedex = (props)=>{
       setPage(nextPage)
     }
 
+
     return(
       <div className="pokemon">
         <div className="type-filter">
-          Filtro tipo
+          <TypeFilter
+          types={types}/>
         </div>
         {loading?
           <div className="load">

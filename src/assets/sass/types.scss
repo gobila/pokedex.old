@@ -1,0 +1,203 @@
+
+
+// pokemon type colors
+$normal:#bdbdb1;
+$fighting:#a85644;
+$flying:#79a4ff;
+$poison:#aa5da1;
+$ground:#edcb56;
+$rock:#cdbc72;
+$bug:#c2d21f;
+$ghost:#7a75d7;
+$steel:#c2c0d7;
+$fire:#fa5643;
+$water:#55aeff;
+$grass:#8bd650;
+$electric:#fee73f;
+$psychic:#fa64b7;
+$ice:#96f1ff;
+$dragon:#8874ff;
+$dark:#82624f;
+$fairy:#f9acff;
+$unknown:#68A090;
+$shadow:#cb9aef;
+
+//mixins
+@mixin pokemonTypes {
+    line-height: 50px;
+    border-radius: 10px;
+    width: 55px;
+    margin: 0px 10px;
+};
+@mixin CarouselTypes {
+    line-height: 30px;
+    border-radius: 5px;
+    width: 40px;
+    margin: 2px
+};
+
+.pokemon-type{
+    &-normal{ 
+        background-color:$normal;
+        @include pokemonTypes;
+    }
+    &-fire{ 
+        background-color: $fire;
+        @include pokemonTypes;
+    }
+    &-water{ 
+        background-color: $water;
+        @include pokemonTypes;
+    }
+    &-electric{ 
+        background-color: $electric;
+        @include pokemonTypes;
+    }
+    &-grass{ 
+        background-color: $grass;
+        @include pokemonTypes;
+    }
+    &-ice{ 
+        background-color: $ice ;
+        @include pokemonTypes;
+    }
+    &-ground{ 
+        background-color: $ground ;
+        @include pokemonTypes;
+    }
+    &-flying{ 
+        background-color: $flying ;
+        @include pokemonTypes;
+    }
+    &-ghost{ 
+        background-color: $ghost;
+        @include pokemonTypes;
+    }
+    &-rock{ 
+        background-color: $rock;
+        @include pokemonTypes;
+    }
+    &-fighting{ 
+        background-color: $fighting;
+        @include pokemonTypes;
+    }
+    &-poison{ 
+        background-color: $poison;
+        @include pokemonTypes;
+    }
+    &-psychic{
+        background-color: $psychic;
+        @include pokemonTypes;
+    }
+    &-bug{ 
+        background-color: $bug;
+        @include pokemonTypes;
+    }
+    &-dark{ 
+        background-color: $dark;
+        @include pokemonTypes;
+    }
+    &-steel{ 
+        background-color: $steel;
+        @include pokemonTypes;
+    }
+    &-dragon{ 
+        background-color: $dragon;
+        @include pokemonTypes;
+    }
+    &-fairy{ 
+        background-color: $fairy;
+        @include pokemonTypes;
+    }
+    &-unknown{ 
+        background-color: $unknown;
+        @include pokemonTypes;
+    }
+    &-shadow{ 
+        background-color: $shadow;
+        @include pokemonTypes;
+    }
+}
+
+.Carousel-type{
+    &-normal{ 
+        background-color:$normal;
+        @include CarouselTypes;
+    }
+    &-fire{ 
+        background-color: $fire;
+        @include CarouselTypes;
+    }
+    &-water{ 
+        background-color: $water;
+        @include CarouselTypes;
+    }
+    &-electric{ 
+        background-color: $electric;
+        @include CarouselTypes;
+    }
+    &-grass{ 
+        background-color: $grass;
+        @include CarouselTypes;
+    }
+    &-ice{ 
+        background-color: $ice ;
+        @include CarouselTypes;
+    }
+    &-ground{ 
+        background-color: $ground ;
+        @include CarouselTypes;
+    }
+    &-flying{ 
+        background-color: $flying ;
+        @include CarouselTypes;
+    }
+    &-ghost{ 
+        background-color: $ghost;
+        @include CarouselTypes;
+    }
+    &-rock{ 
+        background-color: $rock;
+        @include CarouselTypes;
+    }
+    &-fighting{ 
+        background-color: $fighting;
+        @include CarouselTypes;
+    }
+    &-poison{ 
+        background-color: $poison;
+        @include CarouselTypes;
+    }
+    &-psychic{
+        background-color: $psychic;
+        @include CarouselTypes;
+    }
+    &-bug{ 
+        background-color: $bug;
+        @include CarouselTypes;
+    }
+    &-dark{ 
+        background-color: $dark;
+        @include CarouselTypes;
+    }
+    &-steel{ 
+        background-color: $steel;
+        @include CarouselTypes;
+    }
+    &-dragon{ 
+        background-color: $dragon;
+        @include CarouselTypes;
+    }
+    &-fairy{ 
+        background-color: $fairy;
+        @include CarouselTypes;
+    }
+    &-unknown{ 
+        background-color: $unknown;
+        @include CarouselTypes;
+    }
+    &-shadow{ 
+        background-color: $shadow;
+        @include CarouselTypes;
+    }
+}

@@ -1,3 +1,25 @@
+.header-login-btn {
+  background-color: #7E7394;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0px 5px;
+  line-height: 33px;
+}
+.header-search {
+  width: 60%;
+  height: 55px;
+  border-radius: 10px;
+  border: 0px;
+}
+.header-logo {
+  max-width: 15%;
+}
+.header-logo-img {
+  width: 100%;
+}
+
 .home {
   text-align: center;
 }
@@ -11,33 +33,37 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.home-search {
-  width: 65%;
-  height: 55px;
-  border-radius: 10px;
-  border: 0px;
-}
 .home-main {
   background-color: #E0D7EC;
+  padding: 50px;
+  padding-top: 0px;
 }
 
 .pokemon {
   background-color: #D4C3A3;
-  width: 60%;
+  width: 70%;
   margin: auto;
-  height: calc(100px * 9.22);
+  margin-bottom: 3%;
+  height: auto;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 20px 20px;
+  text-transform: capitalize;
 }
 .pokemon-container {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-column-gap: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-column-gap: calc(100% *0.1);
   grid-row-gap: 86px;
-  margin: 50px;
+  margin: auto;
+  width: 90%;
+  padding: 50px;
 }
 .pokemon-card {
   background-color: #B4ADBE;
   border: solid #100B16;
   border-radius: 10px;
+  width: 80%;
+  margin: auto;
 }
 .pokemon-card-heard {
   display: flex;
@@ -67,7 +93,799 @@
   justify-content: flex-end;
   align-items: center;
   right: 5px;
+  text-transform: capitalize;
 }
+.pokemon-type .pokemon-type-normal {
+  background-color: #bdbdb1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-fire {
+  background-color: #fa5643;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-water {
+  background-color: #55aeff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-electric {
+  background-color: #fee73f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-grass {
+  background-color: #8bd650;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-ice {
+  background-color: #96f1ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-ground {
+  background-color: #edcb56;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-flying {
+  background-color: #79a4ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-ghost {
+  background-color: #7a75d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-rock {
+  background-color: #cdbc72;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-fighting {
+  background-color: #a85644;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-poison {
+  background-color: #aa5da1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-psychic {
+  background-color: #fa64b7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-bug {
+  background-color: #c2d21f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-dark {
+  background-color: #82624f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-steel {
+  background-color: #c2c0d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-dragon {
+  background-color: #8874ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-fairy {
+  background-color: #f9acff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-unknown {
+  background-color: #68A090;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .pokemon-type-shadow {
+  background-color: #cb9aef;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.pokemon-type .Carousel-type-normal {
+  background-color: #bdbdb1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-fire {
+  background-color: #fa5643;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-water {
+  background-color: #55aeff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-electric {
+  background-color: #fee73f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-grass {
+  background-color: #8bd650;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-ice {
+  background-color: #96f1ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-ground {
+  background-color: #edcb56;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-flying {
+  background-color: #79a4ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-ghost {
+  background-color: #7a75d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-rock {
+  background-color: #cdbc72;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-fighting {
+  background-color: #a85644;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-poison {
+  background-color: #aa5da1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-psychic {
+  background-color: #fa64b7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-bug {
+  background-color: #c2d21f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-dark {
+  background-color: #82624f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-steel {
+  background-color: #c2c0d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-dragon {
+  background-color: #8874ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-fairy {
+  background-color: #f9acff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-unknown {
+  background-color: #68A090;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-type .Carousel-type-shadow {
+  background-color: #cb9aef;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.pokemon-card-body-img {
+  width: 70%;
+}
+.pokemon-footer {
+  position: relative;
+  bottom: -25px;
+  margin: auto;
+  width: 64%;
+  color: #FFF;
+  background-color: #7E7394;
+  padding: 4%;
+  border: 2px solid #100B16;
+  border-radius: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-page {
+  background-color: #7E7394;
+  width: 40px;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0px 5px;
+  line-height: 33px;
+}
+.pagination-page-btn {
+  background-color: #B4ADBE;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0px 5px;
+  line-height: 33px;
+  width: 40px;
+}
+.pagination-page-current {
+  background-color: #535662;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 0px 5px;
+  line-height: 33px;
+  width: 40px;
+}
+
+.TypeFilter-container {
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+.TypeFilter-text {
+  width: 25px;
+  height: 16px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #535662;
+}
+.TypeFilter-Filter {
+  width: 204px;
+  height: 45px;
+  background: #FFFFFF;
+}
+
+select {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+option {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  left: 20px;
+}
+
+.Carousel {
+  display: flex;
+  align-items: center;
+}
+.Carousel-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+}
+.Carousel-btn {
+  background-color: #524153;
+  color: #FFF;
+  border: solid #000;
+  border-radius: 25px;
+  font-weight: 400;
+  line-height: 3px;
+  width: 40px;
+  height: 40px;
+}
+.Carousel-card {
+  width: 15%;
+  background-color: #B4ADBE;
+  border: solid #100B16;
+  border-radius: 10px;
+}
+.Carousel-card-heard {
+  position: relative;
+  top: -15%;
+}
+.Carousel-card-id {
+  margin: auto;
+  background-color: #535662;
+  border: solid #000;
+  width: 50px;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  color: #FFF;
+}
+.Carousel-card-id-text {
+  transform: rotate(-45deg);
+}
+.Carousel-footer {
+  position: relative;
+  bottom: -7%;
+  width: 80%;
+  margin: auto;
+  color: #FFF;
+}
+.Carousel-name {
+  background-color: #524153;
+  line-height: 50px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.Carousel-type {
+  position: relative;
+  font-size: 12px;
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.Carousel-type .pokemon-type-normal {
+  background-color: #bdbdb1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-fire {
+  background-color: #fa5643;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-water {
+  background-color: #55aeff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-electric {
+  background-color: #fee73f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-grass {
+  background-color: #8bd650;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-ice {
+  background-color: #96f1ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-ground {
+  background-color: #edcb56;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-flying {
+  background-color: #79a4ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-ghost {
+  background-color: #7a75d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-rock {
+  background-color: #cdbc72;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-fighting {
+  background-color: #a85644;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-poison {
+  background-color: #aa5da1;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-psychic {
+  background-color: #fa64b7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-bug {
+  background-color: #c2d21f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-dark {
+  background-color: #82624f;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-steel {
+  background-color: #c2c0d7;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-dragon {
+  background-color: #8874ff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-fairy {
+  background-color: #f9acff;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-unknown {
+  background-color: #68A090;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .pokemon-type-shadow {
+  background-color: #cb9aef;
+  line-height: 50px;
+  border-radius: 10px;
+  width: 55px;
+  margin: 0px 10px;
+}
+.Carousel-type .Carousel-type-normal {
+  background-color: #bdbdb1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-fire {
+  background-color: #fa5643;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-water {
+  background-color: #55aeff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-electric {
+  background-color: #fee73f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-grass {
+  background-color: #8bd650;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-ice {
+  background-color: #96f1ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-ground {
+  background-color: #edcb56;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-flying {
+  background-color: #79a4ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-ghost {
+  background-color: #7a75d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-rock {
+  background-color: #cdbc72;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-fighting {
+  background-color: #a85644;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-poison {
+  background-color: #aa5da1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-psychic {
+  background-color: #fa64b7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-bug {
+  background-color: #c2d21f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-dark {
+  background-color: #82624f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-steel {
+  background-color: #c2c0d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-dragon {
+  background-color: #8874ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-fairy {
+  background-color: #f9acff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-unknown {
+  background-color: #68A090;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type .Carousel-type-shadow {
+  background-color: #cb9aef;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+
+.Favdex-container {
+  border-bottom: 1px solid #707070;
+  display: flex;
+  flex-direction: row;
+  padding: 22px;
+}
+.Favdex-card {
+  display: flex;
+  padding: 22px;
+}
+.Favdex-card-body {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 99%;
+  margin: auto;
+  border-radius: 10px;
+}
+.Favdex-card-body-img {
+  width: 10%;
+}
+.Favdex-card-body-name {
+  text-transform: capitalize;
+  width: 10%;
+  text-align: center;
+  font-weight: bold;
+}
+.Favdex-card-body-type {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  text-transform: capitalize;
+}
+.Favdex-card-body-action {
+  width: 25%;
+}
+.Favdex-card-body-action-view {
+  border: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: #FFF;
+  font-size: 22px;
+  margin-right: 5px;
+  background-color: #49DBDF;
+}
+.Favdex-card-body-action-delete {
+  border: 0px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  color: #FFF;
+  font-size: 22px;
+  margin-right: 5px;
+  background-color: #F25D52;
+}
+.Favdex-titles-card-body {
+  display: flex;
+}
+.Favdex-titles-card-body-img {
+  width: 15%;
+}
+.Favdex-titles-card-body-name {
+  text-transform: capitalize;
+  width: 15%;
+  text-align: left;
+}
+.Favdex-titles-card-body-type {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+}
+.Favdex-titles-card-body-action {
+  width: 30%;
+}
+
 .pokemon-type-normal {
   background-color: #bdbdb1;
   line-height: 50px;
@@ -208,32 +1026,146 @@
   width: 55px;
   margin: 0px 10px;
 }
-.pokemon-card-body-img {
-  width: 70%;
-}
-.pokemon-footer {
-  position: relative;
-  bottom: -25px;
-  margin: auto;
-  width: 64%;
-  color: #FFF;
-  background-color: #7E7394;
-  padding: 4%;
-  border: 2px solid #100B16;
-  border-radius: 10px;
-}
 
-.pagination {
-  display: flex;
-  justify-content: flex-end;
-}
-.pagination-page-btn {
-  color: #FFF;
-  background-color: #B4ADBE;
-  border: solid #000;
-  border-radius: 10px;
+.Carousel-type-normal {
+  background-color: #bdbdb1;
+  line-height: 30px;
+  border-radius: 5px;
   width: 40px;
-  height: 42px;
+  margin: 2px;
+}
+.Carousel-type-fire {
+  background-color: #fa5643;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-water {
+  background-color: #55aeff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-electric {
+  background-color: #fee73f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-grass {
+  background-color: #8bd650;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ice {
+  background-color: #96f1ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ground {
+  background-color: #edcb56;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-flying {
+  background-color: #79a4ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-ghost {
+  background-color: #7a75d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-rock {
+  background-color: #cdbc72;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-fighting {
+  background-color: #a85644;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-poison {
+  background-color: #aa5da1;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-psychic {
+  background-color: #fa64b7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-bug {
+  background-color: #c2d21f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-dark {
+  background-color: #82624f;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-steel {
+  background-color: #c2c0d7;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-dragon {
+  background-color: #8874ff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-fairy {
+  background-color: #f9acff;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-unknown {
+  background-color: #68A090;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
+}
+.Carousel-type-shadow {
+  background-color: #cb9aef;
+  line-height: 30px;
+  border-radius: 5px;
+  width: 40px;
+  margin: 2px;
 }
 
 /*# sourceMappingURL=poke.css.map */

@@ -1,0 +1,40 @@
+
+.TypeFilter{
+    &-container{
+        border-bottom: 1px solid #707070;
+        display: flex;
+        flex-direction: column;
+        padding: 22px;
+    }
+    &-text{
+        width: 25px;
+        height: 16px;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #535662;
+    }
+    &-Filter{
+        width: 204px;
+        height: 45px;
+        background: #FFFFFF;
+    }
+
+}
+select{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+}
+option{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    left: 20px;
+}

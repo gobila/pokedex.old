@@ -1,0 +1,72 @@
+@mixin CarouselBtn {
+    color: #FFF;
+    border: solid #000;
+    border-radius: 25px;
+    // width: 40px;
+    font-weight: 400;
+    line-height: 3px;
+}
+.Carousel{
+
+    display: flex;
+    align-items: center;
+
+    &-container{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    &-btn{
+        background-color: $darkPurple;
+        @include CarouselBtn;
+        width: 40px;
+        height: 40px;
+    }
+    &-card{
+        width: 15%;
+        background-color: $ligthPurple;
+        border: solid #100B16;
+        border-radius: 10px;
+
+        &-heard{
+            position: relative;
+            top: -15%;
+        }
+
+        &-id{
+            margin: auto;
+            background-color: $darkPurple2;
+            border: solid #000;
+            width: 50px;
+            border-radius: 10px;
+            transform: rotate(45deg);
+            color: $text;
+            &-text{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    &-footer{
+        position: relative;
+        bottom: -7%;
+        width: 80%;
+        margin: auto;
+        color: $text;
+    }
+    &-name{
+        background-color: $darkPurple;
+        line-height:50px;
+        border-radius: 10px;
+        text-transform: capitalize;
+    }
+    &-type{
+        position: relative;
+        font-size: 12px;
+        bottom: -15px;
+        display: flex;
+        justify-content: center;
+        text-transform: capitalize;
+        @import './types.scss';
+    }
+}

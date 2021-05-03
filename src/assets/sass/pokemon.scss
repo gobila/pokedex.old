@@ -1,0 +1,102 @@
+
+.pokemon{
+    background-color: #D4C3A3;
+    width: 70%;
+    margin:auto;
+    margin-bottom: 3%;
+    height: auto;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 20px 20px;
+    text-transform: capitalize;
+    
+
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-column-gap: calc(100% *0.1);
+        grid-row-gap:86px;
+        margin: auto;
+        width: 90%;
+        padding: 50px;
+        
+    }
+
+    &-card{
+        background-color: $ligthPurple;
+        border: solid #100B16;
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    &-card-heard{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-id{
+        color:$text;
+        background-color: $darkPurple2;
+        width: 45px;
+        height: 48px;
+        border: solid #100B16;
+        border-radius: 10px;
+        transform:rotate(45deg);
+        position: relative;
+        top:-15px;
+        left:-25px;
+
+        &-text{
+            transform:rotate(-45deg);
+        }
+    }
+    &-type {
+        position: relative;
+        top:-30px;
+        color: #FFFFFF; 
+        display:flex;
+        width: auto;
+        justify-content: flex-end;
+        align-items: center;
+        right: 5px;
+        text-transform: capitalize;
+        
+        @import './types.scss';
+    }
+    &-card-body{
+        &-img{
+            width: 70%;
+        }
+    }
+    &-footer{
+        position: relative;
+        bottom: -25px;
+        margin:auto;
+        width: 64%;
+        color: $text;
+        background-color: $purple;
+        padding: 4%;
+        border: 2px solid #100B16;
+        border-radius: 10px;
+    }
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    
+    &-page{
+        background-color: $purple;
+        width: 40px;
+        @include pagination;
+
+        &-btn{
+            background-color: $ligthPurple;
+            @include pagination;
+            width: 40px;
+        }
+        &-current{
+            background-color: $darkPurple2;
+            @include pagination;
+            width: 40px;
+        }
+    }
+}

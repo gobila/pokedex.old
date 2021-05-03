@@ -1,18 +1,17 @@
 import React, {useState, useEffect} from 'react'
-import api, { getPokemons, getPokemonData, getSearch } from "../services/api";
-import Pokedex from '../components/Pokedex';
+import api, { getPokemons, getPokemonData, getTypes } from "../services/api";
+import FavDex from '../components/FavDex';
 import '../assets/css/poke.css';
 import Carousel from '../components/Carousel';
 import Header from '../components/Header';
 
 
-export default function Home(){
+export default function UserDex(){
   const [pokemons, setPokemons]= useState([]);
   const [page, setPage]=useState(0);
   const [total, setTotal]=useState();
   const [loading, setLoading]=useState(true);
   const [types, setTypes]=useState([]);
-  const [searchFall, setSearchFall]=useState(false);
 
   const getAllPokemons = async()=>{
     try {
@@ -40,39 +39,25 @@ export default function Home(){
       console.log(error)
     }
   }
-
-
   useEffect(()=>{
-      getAllPokemons();
-      getPokemonsByType();
+    getAllPokemons();
+    getPokemonsByType();
   },[page])
 
-  const onSearch = async (pokemon) => {
-    if (!pokemon) {
-      return getAllPokemons();
-    }
-    const result = await getSearch(pokemon);
-      setPokemons([result]);
-      setPage(0);
-      setTotal(1);
-  };
+
 
   return(
     <div className="home">
 
-      <Header 
-      onSearch={onSearch}/>
-      <section className="home-main">
-        <Pokedex  types={types}  loading={loading}
-                  pokemons={pokemons}  page={page}
-                  setPage={setPage}  total={total}
-        />
-        <div className="home-PokeList">
-        </div>
+      <Header/>
 
-        <Carousel pokemons={pokemons}  carousel={page}
-                setCarousel={setPage}  total={total}
-              />
+      <section className="home-main">
+          <FavDex  
+                    pokemons={pokemons}
+                    
+          />
+          <div className="home-PokeList">
+        </div>
       </section>
       <footer className="home-footer">
         footer
