@@ -1,126 +1,59 @@
-import {useEffect, useState, Fragment} from 'react';
-
-import logo from '../assets/img/logo2.svg';
-import PokeLogo from '../assets/img/International_Pokémon_logo.svg'
-import '../App.css';
+import React, {useState, useEffect} from 'react'
+import { getPokemons, getPokemonData } from "../services/api";
+import Pokedex from '../components/Pokedex';
 import '../assets/css/poke.css';
-import api from '../services/api';
 
-function Home() {
+export default function(Home){
+  const [pokemons, setPokemons]= useState([]);
+  const [page, setPage]=useState(0);
+  const [total, setTotal]=useState();
+  const [loading, setLoading]=useState(true);
 
-  const PokemonUrl= 'pokemon/';
-  const [pokemon, setPokemon] = useState('');
-  const pokemonId='ditto'
-  const [types, setTypes] = useState('');
-  const TypesUrl='type/'
-
+  const getAllPokemons = async()=>{
+    try {
+      setLoading(true)
+      const data = await getPokemons(6, 6* page);
+      const promises = data.results.map(async (pokemon)=>{
+        return await getPokemonData(pokemon.url)
+      })
+      const results = await Promise.all(promises)
+      setPokemons(results)
+      setLoading(false)
+      setTotal(Math.ceil(data.count /6))
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   useEffect(()=>{
-    getPokemons();
-    getTypes();
-   },[])
+    getAllPokemons()
+  },[page])
 
-  async function getPokemons(){
-    await api.get(PokemonUrl +pokemonId).then((response)=>{
-      setPokemon(response.data)
-    }).catch((error)=>{
-      setPokemon(null);
-      console.log(error)
-    })
-  }
-
-  async function getTypes(){
-    await api.get(TypesUrl).then((response)=>{
-      setTypes(response.data.results)
-      // types.forEach(n => {
-      //   console.log(n.name)
-      // });
-    }).catch((error)=>{
-      console.error('busca de tipo com Erro:' +error)
-    })
-  }
-
-  const listed = ()=>{
-    const options = types.map(n=>(<option key={n.name}>{n.name}</option>))
-    return(options)
-  }
-
-  return (
-    pokemon&&
-    <div className="Home">
-      <header className="Home-header">
-        <img src={PokeLogo} className="Home-logo" alt="logo" />
-        <input className="Home-search">
+  return(
+    <div className="home">
+      <header className="home-header">
+        <input className="home-search">
 
         </input>
-        <img src={logo} className="Home-logo" alt="logo"/>
       </header>
-      <section className="Home-main">
-        <div className="Home-PokeResult">
-          {/* Filtro de tipo */}
-          <div className="Home-typeFilter">
-            <h3>Tipo: </h3>
-            <select>
-              <option>Select</option>
-              {listed()}
-            </select>
-          </div>
-          {/* lista de pokemons */}
-          <div className="Home-PokeList">
-{/* poke1 */}
-            <div className="Home-pokemon">
-              <div className="Home-pokemon-status">
-                <div className="Home-pokemon-xp"><p>{pokemon.id}</p></div>
-                <div className="Home-pokemon-type">
-                  <p>{pokemon.types[0].type.name}</p>
-                </div>
-              </div>
-              <div className="Home-pokemon-img">
-                <img src={pokemon.sprites.front_default}/>
-              </div>
-              <div className="Home-pokemon-name">{pokemon.name}</div>
-            </div>
-            {/* poke1 */}
-            <div className="Home-pokemon">
-              <div className="Home-pokemon-status">
-                <div className="Home-pokemon-xp"><p>{pokemon.id}</p></div>
-                <div className="Home-pokemon-type">
-                  <p>{pokemon.types[0].type.name}</p>
-                </div>
-              </div>
-              <div className="Home-pokemon-img">
-                <img src={pokemon.sprites.front_default}/>
-              </div>
-              <div className="Home-pokemon-name">{pokemon.name}</div>
-            </div>
-{/* poke1 */}
-<div className="Home-pokemon">
-              <div className="Home-pokemon-status">
-                <div className="Home-pokemon-xp"><p>{pokemon.id}</p></div>
-                <div className="Home-pokemon-type">
-                  <p>{pokemon.types[0].type.name}</p>
-                </div>
-              </div>
-              <div className="Home-pokemon-img">
-                <img src={pokemon.sprites.front_default}/>
-              </div>
-              <div className="Home-pokemon-name">{pokemon.name}</div>
-            </div>
-            
 
-          </div>
-        </div>
+      <section className="home-main">
+          <Pokedex loading={loading}
+                    pokemons={pokemons}
+                    page={page}
+                    setPage={setPage}
+                    total={total}
+          />
       </section>
-      <section className="Home-random">
-        <div className="Home-PokeList">
+
+      <section className="home-random">
+        <div className="home-PokeList">
           Aleatorio corrusel
         </div>
       </section>
-      <footer className="Home-footer">
+      <footer className="home-footer">
         footer
       </footer>
     </div>
-  );
+  )
 }
-
-export default Home;
