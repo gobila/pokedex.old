@@ -4,7 +4,7 @@
  *   |           ^^^^^
  *   '
  *   sass\favdex.scss 6:11   action-btn()
- *   sass\favdex.scss 58:21  root stylesheet */
+ *   sass\favdex.scss 55:21  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      color:$text;\d\a   \2502            ^^^^^\a   \2575 \a   sass\\favdex.scss 6:11   action-btn()\a   sass\\favdex.scss 58:21  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      color:$text;\d\a   \2502            ^^^^^\a   \2575 \a   sass\\favdex.scss 6:11   action-btn()\a   sass\\favdex.scss 55:21  root stylesheet";
 }

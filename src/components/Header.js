@@ -1,7 +1,7 @@
 import React, {useState}from 'react';
 import logo from '../assets/img/logo2.svg'
 import pokemonLogo from '../assets/img/International_Pokémon_logo.svg';
-import {getSearch} from '../services/api'
+
 const Header=(props)=>{    
     const {onSearch} = props;
     const [search,setSearch] = useState('');
@@ -28,7 +28,7 @@ const Header=(props)=>{
         <div className="header-logo">
             <img className="header-logo-img" src={pokemonLogo}/>
         </div>
-        <input className="header-search" placeholder="Buscar Pokemon" type='text' onClick={onClick} onChange={onChange} onKeyPress={onKeyUp}>
+        <input className="header-search" placeholder="Buscar Pokemon" type='text' onChange={onChange} onKeyPress={onKeyUp}>
         </input>
         <div className="header-login">
             <button className="header-login-btn"> Login</button>

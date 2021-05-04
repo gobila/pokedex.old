@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const PokemonCarousel = (props)=>{
     const {pokemon} = props
+
+
     return(
         <div className="Carousel-card">
             <div className="Carousel-card-heard">

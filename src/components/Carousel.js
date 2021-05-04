@@ -3,10 +3,9 @@ import PokemonCarousel from './PokemonCarousel';
 
 const Carousel =(props)=>{
     
-  const {pokemons, leftClick, rightClick, carousel,setCarousel, total,}= props;
+  const {pokemons, carousel,setCarousel, total,}= props;
   const left='<';
   const right='>';
-
 
     const lastCarousel = ()=>{
       const nextCarousel = Math.max(carousel - 1, 0)

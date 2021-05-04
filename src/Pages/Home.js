@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import api, { getPokemons, getPokemonData, getSearch } from "../services/api";
+import api, { getPokemons, getPokemonData, getSearch, getTypes } from "../services/api";
 import Pokedex from '../components/Pokedex';
 import '../assets/css/poke.css';
 import Carousel from '../components/Carousel';
@@ -13,6 +13,7 @@ export default function Home(){
   const [loading, setLoading]=useState(true);
   const [types, setTypes]=useState([]);
   const [searchFall, setSearchFall]=useState(false);
+
 
   const getAllPokemons = async()=>{
     try {
@@ -35,11 +36,19 @@ export default function Home(){
       const data = await api.get('type').then((response)=>{
         return response.data.results
       });
-      setTypes(data)
+      const promises = data.map(async (type)=>{
+        return await getPokemonData(type.url)
+      })
+      const results = await Promise.all(promises)
+      setTypes(results)
     } catch (error) {
       console.log(error)
     }
   }
+
+  const onFilter = async () => {
+    
+  };
 
 
   useEffect(()=>{
@@ -66,6 +75,7 @@ export default function Home(){
         <Pokedex  types={types}  loading={loading}
                   pokemons={pokemons}  page={page}
                   setPage={setPage}  total={total}
+                  onFilter={onFilter}
         />
         <div className="home-PokeList">
         </div>

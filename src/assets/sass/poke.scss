@@ -5,12 +5,16 @@ $darkPurple:#524153;
 $darkPurple2:#535662;
 $ligthPurple:#B4ADBE;
 $text:#FFF;
+$lighBlue:#49DBDF;
+$lightRed:#F25D52;
+$add:#3AA05B;
+
 
 
 // Mixins
 
 @mixin pagination {
-    color: #FFF;
+    color: $text;
     border: solid #000;
     border-radius: 10px;
     // width: 40px;
@@ -23,7 +27,7 @@ $text:#FFF;
         
         &-btn{
             background-color: $purple;
-            color: #FFF;
+            color: $text;
             border: solid #000;
             border-radius: 10px;
             font-weight: 400;

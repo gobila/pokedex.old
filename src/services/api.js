@@ -27,9 +27,8 @@ export const getPokemonData = async(url)=>{
     return data
 }
 
-export const getTypes = async()=>{
-    const url='/type'
-    const data = await api.get(url).then((response)=>{
+export const getTypes = async(pokemon)=>{
+    const data = await api.get(`pokemon/${pokemon}`).then((response)=>{
         return(response.data)
     });
     return data
